@@ -1,12 +1,24 @@
 import React, { useState } from "react";
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, StyleSheet } from "react-native";
 
 const Todo = (props) => {
 	return (
-		<View>
+		<View style={[{ margin: 9 }, styles.item]}>
 			<Text>{props.name}</Text>
 		</View>
 	);
 };
+
+const styles = StyleSheet.create({
+	item: {
+		flexDirection: "row",
+		justifyContent: "center",
+		alignItems: "center",
+		borderColor: "grey",
+		borderWidth: 1,
+		borderRadius: 6,
+		backgroundColor: "whitesmoke",
+	},
+});
 
 export default Todo;
