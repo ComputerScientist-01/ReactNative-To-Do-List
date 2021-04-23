@@ -16,8 +16,10 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		borderColor: "grey",
 		borderWidth: 1,
-		borderRadius: 6,
+		borderRadius: 5,
 		backgroundColor: "whitesmoke",
+		marginBottom: 9,
+		padding: 8,
 	},
 });
 
